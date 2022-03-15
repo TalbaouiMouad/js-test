@@ -5,11 +5,11 @@ var like= document.getElementById('like');
 var dislike= document.getElementById('dslike');
 var nmbrlike,nmbrdislike;
 
- function getlike() {
+function getlike() {
     return localStorage.getItem("likes")
-      ? Number(localStorage.getItem('likes'))
-      : 0 ;
-  }
+    ? Number(localStorage.getItem('likes'))
+    : 0 ;
+}
 
 function getdislike() {
     return localStorage.getItem("dslikes")
@@ -34,6 +34,7 @@ function addDislike(){
 frstButton.addEventListener('click',addLike);
 scndtButton.addEventListener('click',addDislike);
 img.addEventListener('dblclick',addLike);
+
 
 
 
